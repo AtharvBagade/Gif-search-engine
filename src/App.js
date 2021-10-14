@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import { Header } from './Components/Header';
-import { SearchBar } from './Components/SearchBar';
+import { Giphy } from './Components/Giphy';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
     <Header />
-    <SearchBar/>
+    <Giphy />
     </div>
   );
 }
