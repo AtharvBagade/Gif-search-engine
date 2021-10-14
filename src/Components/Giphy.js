@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const SearchBar = () => {
+export const Giphy = () => {
 
     const Giphyapi ="yPnwrH8lyHgS1j99J6Mg091Z8OX7VVQ8";
 
