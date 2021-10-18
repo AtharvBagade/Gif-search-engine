@@ -12,7 +12,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-color: #1d2325;
+  background-color: #52586e;
   color: #ffffff;
 }
 
@@ -64,22 +64,11 @@
   color: #ffffff
 }
 
-.modalGif
-{
-  position: "fixed";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
-  background: "rgba(0, 0, 0, .8)";
-}
 
 .Giphy
 {
   height: max-content;
+  background-color: #0a1c32;
 }
 
 .data 
@@ -91,14 +80,17 @@
 
 .card
 {
+  background-color: #4a6487;
   margin: 2vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   height: 35vh;
-  width: 35vh;
+  width: 32vh;
   box-shadow: #1d2325 1px 1px 1px 1px;
+  border-radius: 2rem;
+  transition: 0.5s all ease-in-out;
 }
 
 .card img 
@@ -106,24 +98,28 @@
   height: 20vh;
   width: 25vh;
   margin-top: 5vh;
+  border-radius: 2rem;
 }
 
 #firstline
 {
   padding: 1vh;
-  font-size: 2vh;
+  font-size: 1.5vh;
+  color: #fefefe;
 }
 
 #secondline
 {
   padding: 1vh;
-  font-size: 2vh;
+  font-size: 1.5vh;
+  color: #fefefe;
 }
 
 .buttons
 {
   display: flex;
   justify-content: space-around;
+  color: #fefefe;
 } 
 
 .buttons button
@@ -134,4 +130,9 @@
   outline: none;
   background-color: #1d2325;
   color: #ffffff;
+}
+
+a:active ,a:visited ,a 
+{
+  color: #fefefe;
 }
