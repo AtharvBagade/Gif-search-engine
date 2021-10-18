@@ -106,7 +106,7 @@ export const Giphy = () => {
         </div>
         <div className="data">
         {
-            Giphy.data && Giphy.data.map(data =><div className="card" key={data.id}><img src={data.images.original_still.url}/>
+            Giphy.data && Giphy.data.map(data =><div className="card" key={data.id}><video src={data.images.preview.mp4} autoPlay loop/>
         <span id="firstline">From: {data.username}</span> <span id="secondline">Source: <a href={data.bitly_url}>{data.bitly_url}</a></span></div>)
         
         }
@@ -116,7 +116,7 @@ export const Giphy = () => {
         <div className="buttons">
            { state.page > 1 ? <button onClick={prev}>Prev</button> :"" }
            {state.page > 1 ? state.page :""}
-           {Giphy.data !== "undefined" || Giphy.data!== null || Giphy.data !=="" ? <button onClick={next}>Next</button> :"" } 
+           { Giphy.data.length !==0 ? <button onClick={next}>Next</button> :"" } 
         </div>
         </div>
     )
